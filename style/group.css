@@ -1,0 +1,101 @@
+.people {
+    display: block;
+    margin: 0 auto 3rem auto;
+    width: 48rem;
+    font-size: 1rem;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.people h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: rgb(0, 70, 136);
+}
+
+.people a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.people a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.people img {
+    width: 100%;
+}
+
+.people .name {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.people .position {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 90, 176);
+}
+
+.people .email {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.people p {
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+.people::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.person {   
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.person .photo {
+    width: 25%;
+    margin: 0 0;
+    padding: 0.5rem 0 0 0;
+    float: left;
+    vertical-align: baseline;
+}
+
+.person .info {
+    width: 75%;
+    float: left;
+    padding-left: 2rem;
+    vertical-align: baseline;
+}
+
+.person::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* adjust website to fit small screens */
+
+@media only screen and (max-width: 64rem) {
+    .people {
+        width:100%;
+        margin: 0 0 1rem 0;
+        padding: 0rem 1.5rem 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .person {
+        margin-top: 2rem;
+    }
+}
+

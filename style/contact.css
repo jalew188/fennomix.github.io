@@ -1,0 +1,45 @@
+.contact {
+    display: block;
+    margin: auto;
+    width: 64rem;
+    margin: 0rem auto 2rem auto;
+    font-size: 1.2rem;
+    padding: 2rem 1rem 0rem 1rem;
+    text-align: left;
+    color: rgb(0, 0, 0)
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 70, 136);
+    margin: 2rem 0 1.5rem 0;
+}
+
+.contact p {
+    text-align: justify;
+    justify-content: inter-word;
+    width: 100%;
+    hyphens: none;
+}
+
+/* adjust website to fit small screens */
+
+@media only screen and (max-width: 64rem) {
+    .contact {
+        width:100%;
+        margin: 0 0;
+        padding: 2rem 1.5rem 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .contact h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .contact p {
+        hyphens: auto;
+    }
+}

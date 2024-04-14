@@ -1,0 +1,50 @@
+.research {
+    display: block;
+    margin: auto;
+    width: 64rem;
+    margin: 2rem auto 2rem auto;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.research h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(240, 134, 0);
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0 0 0;
+}
+
+.research p {
+    text-align: justify;
+    text-justify: inter-word;
+    width: 100%;
+    margin: 1rem 0;
+    hyphens: none;
+}
+
+.research .myImg {
+    margin: 1.5rem 0 0 0;
+}
+
+/* adjust website to fit small screens */
+
+@media only screen and (max-width: 64rem) {
+    .research {
+        width:100%;
+        margin: 0 0 2rem 0;
+        padding: 0 1.5rem;
+        font-size: 1rem;
+    }
+
+    .research h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .research p {
+        hyphens: auto;
+    }
+}

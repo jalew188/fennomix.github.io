@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: #f2f2f2;
+    overflow-x: hidden;
+}
+
+/* header */
+
+.header {
+    display: block;
+    padding-top: 1rem;
+    color: rgb(0, 70, 136);
+    width: 100vw;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    display: none;
+}
+
+.header p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+    display: none;
+}
+
+.header a {
+    float: left;
+}
+
+.header img {
+    height: 4.5rem;
+}
+
+.header text {
+    width: 100vw;
+}
+
+/* navigation bar */
+
+.navbar .container-fluid {
+    width: 60rem;
+}
+
+.navbar-dark .navbar-nav li .nav-link {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0;
+}
+
+/*
+.navbar-dark .navbar-nav li .nav-link:hover {
+    background-color: rgb(20, 90, 156);
+    border-radius: 0.5rem;
+}
+*/
+
+.navbar-dark .navbar-nav li .nav-link:hover:not(.active) {
+    color: rgb(240, 134, 0);
+}
+
+.navbar-dark .navbar-nav li .nav-link.active {
+    color: #f2f2f2;
+    font-weight: bolder;
+}
+
+.navbar-dark .navbar-toggler {
+    border:0.125rem;
+}
+
+.navbar-dark .navbar-toggler:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-toggler .navbar-toggler-icon {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+/* footer */
+
+.foot {
+    width:100vw;
+    display: block;
+    height: 3rem;
+    background:rgb(0, 70, 136);
+}
+
+.foot p {
+    font-size: 0.5rem;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 0.85rem 0;
+}
+
+/* adjust website to fit small screens */
+
+@media only screen and (max-width: 64rem) {
+    
+    .navbar .container-fluid {
+        width: 100vw;
+    }
+
+    .navbar-dark .navbar-nav li .nav-link {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .foot {
+        height: 2rem;
+    }
+
+    .foot p {
+        padding: 0.6rem;
+    }
+    
+}

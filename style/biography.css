@@ -1,0 +1,77 @@
+.biography {
+    display: block;
+    margin: 3rem auto 3rem auto;
+    width: 64rem;
+    font-size: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.biography p {
+    text-align: justify;
+    justify-content: inter-word;
+    hyphens: none;
+}
+
+.biography img {
+    width: 100%;
+}
+
+.biography .container {
+    width: 100%;
+}
+
+.biography .photo {
+    width: 30%;
+    float: left;
+    padding: 0.4rem 0 0 0;
+    vertical-align: baseline;
+}
+
+.biography .photo_horizontal {
+    width: 80%;
+    float: center;
+    padding: 0.4rem 0 1.4rem 0;
+    margin: auto;
+    vertical-align: baseline;
+}
+
+.biography .info {
+    width: 70%;
+    float: left;
+    padding-left: 3rem;
+    vertical-align: baseline;
+}
+
+.biography::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 64rem) {
+    .biography {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .biography .photo {
+        float: none;
+        width: 16rem;
+        margin: auto;
+    }
+
+    .biography .info {
+        float: none;
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .biography p {
+        hyphens: auto;
+    }
+}

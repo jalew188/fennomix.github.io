@@ -1,0 +1,87 @@
+.publications {
+    display: block;
+    margin: 1rem auto 1rem auto;
+    width: 64rem;
+    font-size: 1rem;
+    padding: 1.5rem 1rem 0 1rem;
+    text-align: left;
+    color: rgb(0, 0, 0)
+}
+
+.publications h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 70, 136);
+    margin-bottom: 1.5rem;
+}
+
+.publications a {
+    text-decoration: none;
+    color: rgb(0, 70, 136);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.publications:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.paper {
+    margin-bottom: 1rem;
+    width: 100%;
+    float: left;
+}
+
+.paper .p-number {
+    width: 6%;
+    float: left;
+    font-size: 1rem;
+    font-weight: 550;
+    padding: 0.08rem  0 0 0;
+    vertical-align: baseline;
+}
+
+.paper .p-title {
+    width: 94%;
+    float: left;
+    font-size: 1rem;
+    font-weight: 550;
+    vertical-align: baseline;
+}
+
+.paper .p-title a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 550;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.paper .p-info {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+/* adjust website to fit small screens */
+
+@media only screen and (max-width: 64rem) {
+    .publications {
+        width:100%;
+        margin: 0 0 1rem 0;
+        padding: 1.5rem 1.5rem 0 1.5rem;
+        font-size: 1rem;
+    }
+
+    .paper .p-number {
+        width: 15%;
+    }
+
+    .paper .p-title {
+        width: 85%;
+    }
+}
+
